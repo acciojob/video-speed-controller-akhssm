@@ -1,13 +1,11 @@
-// Get elements
 const player = document.querySelector('.player');
-const video = player.querySelector('.viewer');
+const video = player.querySelector('.player_video');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
 
-// Functions
 function togglePlay() {
   const method = video.paused ? 'play' : 'pause';
   video[method]();
@@ -35,7 +33,6 @@ function scrub(e) {
   video.currentTime = scrubTime;
 }
 
-// Hook up event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
