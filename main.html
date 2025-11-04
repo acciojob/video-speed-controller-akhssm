@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Video Speed Controller</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="player">
-    <!-- Cypress expects this class -->
-    <video class="player_video" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-
-    <div class="player__controls">
-      <div class="progress">
-        <div class="progress__filled"></div>
-      </div>
-
-      <button class="player__button toggle" title="Toggle Play">►</button>
-      <button class="player__button rewind" data-skip="-10">« 10s</button>
-      <button class="player__button forward" data-skip="25">25s »</button>
-
-      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
-      <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
-    </div>
+    <video class="player_video" controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
   </div>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
