@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const video = document.querySelector('.player_video');
   const toggle = document.querySelector('.toggle');
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let mousedown = false;
 
   if (!video) {
-
     console.error('player_video element not found in DOM');
     return;
   }
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleRangeUpdate() {
-
     video[this.name] = this.value;
   }
 
